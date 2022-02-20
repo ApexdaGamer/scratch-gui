@@ -13,6 +13,8 @@ import videoSensingInsetIconURL from './videoSensing/video-sensing-small.svg';
 import text2speechIconURL from './text2speech/text2speech.png';
 import text2speechInsetIconURL from './text2speech/text2speech-small.svg';
 
+import loccoblocksIconURL from './loccoblocks/loccoblocks.png';
+
 import speech2textIconURL from './speech2text/speech.png';
 
 import translateIconURL from './translate/translate.png';
@@ -126,6 +128,26 @@ export default [
                 defaultMessage="Make your projects talk."
                 description="Description for the Text to speech extension"
                 id="gui.extension.text2speech.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="LoccoBlocks"
+                description="Name for the LoccoBlocks extension"
+                id="gui.extension.loccoblocks.name"
+            />
+        ),
+        extensionId: 'loccoblocks',
+        iconURL: loccoblocksIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Random blocks by LockedGamer."
+                description="Description for the LoccoBlocks extension"
+                id="gui.extension.loccoblocks.description"
             />
         ),
         featured: true,
